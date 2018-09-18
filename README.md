@@ -16,10 +16,10 @@ https://code.jquery.com/jquery-3.2.1.slim.min.js
 
 Usa un ccs basado en bootstrap:
 
-formulario.inteligente-css.css
+formulario-inteligente-css.css
 
 # JS
 
 Usa un javascript que controla el efecto de mostrar y esconder los campos del formulario, si se agregan más campos en el html, hay que agregarlos también en el js:
 
-formulario.inteligente.js
+formulario-inteligente.js
