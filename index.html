@@ -1,0 +1,73 @@
+<html lang="es">
+<head>
+<!-- Permite caracteres Unicode en lenguaje español, incluyendo acentos y eñes-->
+	<meta charset="UTF-8">
+</head>
+<!-- Llamadas a bootstrap y jquery en la nube-->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<!-- CSS Local-->
+<link href="formulario-inteligente-css.css" rel="stylesheet"/>
+
+<form class="p-3">
+	<!-- Primer grupo de campos fijos-->
+  <div class="form-group">
+   <div class="row">
+    <div class="col-6">
+      <label for="nombre">Nombre</label>
+		<input type="text" class="form-control w-100" id="nombre" placeholder="Tu nombre">
+    </div>
+    <div class="col-6">
+      <label for="nombre">Email</label>
+		<input type="email" class="form-control w-100" id="correo" placeholder="Tu correo">
+    </div>
+   </div>
+  </div><!-- Fin del primer grupo de campos fijos-->
+	<!-- En este select el usuario selecciona si quiere ver o no más campos -->
+  <div class="form-group">
+    <label for="verMasCampos">Mostrar más campos</label>
+    <select class="form-control" id="verMasCampos" style="width: 90px">
+          <option value="no">No</option>
+          <option value="yes">Sí</option>
+    </select>
+  </div><!-- Fin del select-->
+	<!-- En el javascript se hace referencia al id masCaposDiv y se muestra o se oculta de acuerdo a la opción seleccionada -->
+  <div class="form-group" id="masCamposDiv">
+    <label for="masCampos">Se muestran mas campos</label>
+    <select class="form-control" id="masCampos">
+      <option>Opcion 1</option>
+      <option>Opcion 2</option>
+      <option>Opcion 3</option>
+    </select>
+  </div>
+	<!-- Se repite el efecto de mostrar y esconder pero esta vez con un grupo de campos-->
+  <div class="form-group">
+    <label for="verMasCamposGroup">Mostrar otro grupo de campos</label>
+    <select class="form-control" id="verMasCamposGroup" style="width: 90px">
+          <option value="no">No</option>
+          <option value="yes">Sí</option>
+    </select>
+  </div><!-- Fin del select-->
+	<!-- En el javascript se hace referencia al id masCaposGroupDiv y se muestra o se oculta de acuerdo a la opción seleccionada -->
+  <div class="form-group" id="masCamposGroupDiv">
+   <div class="row">
+    <div class="col-4">
+      <label for="masCampos1">Grupo 1</label>
+      <input type="text" class="form-control w-100" id="masCampos1">
+    </div>
+    <div class="col-4">
+      <label for="masCampos2">Grupo 2</label>
+      <input type="text" class="form-control w-100" id="masCampos2">
+    </div>
+    <div class="col-4">
+      <label for="masCampos3">Grupo 3</label>
+      <input type="text" class="form-control w-100" id="masCampos3">
+    </div>
+   </div>
+  </div><!-- Fin del grupo de opciones-->
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+</html>
+<!-- Script que muestra y esconde las opciones según lo seleccionado por el usuario-->
+<script src="formulario-inteligente.js"></script>
